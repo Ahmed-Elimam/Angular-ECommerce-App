@@ -6,7 +6,7 @@
           <img [src]="product.productImage" class="card-img-top" [alt]="product.productName">
           <div class="card-body">
             <h5 class="card-title">{{ product.productName }}</h5>
-            <p class="card-text">{{ product.productPrice }}</p>
+            <p class="card-text">${{ product.productPrice }}</p>
             @if (product.onSale) {
                 <span class="badge bg-success">On Sale</span>
             }

@@ -1,1 +1,15 @@
-<p>category works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 mb-4 d-flex justify-content-between flex-wrap">
+            @for (category of categories; track $index) {
+                <div class="card flex-row align-items-center p-3 shadow-sm" style="min-width: 300px; max-width: 100%;">
+                    <img [src]="category.image" alt="{{ category.title }}" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover; margin-right: 20px;">
+                    <div>
+                        <h5 class="mb-1">{{ category.title }}</h5>
+                        <p class="text-muted mb-0">${{ category.price }}</p>
+                    </div>
+                    </div>          
+                }
+        </div>
+    </div>
+</div>

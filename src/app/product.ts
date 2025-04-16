@@ -1,7 +1,13 @@
 export interface Product {
     id: number;
-    productName: string;
-    productPrice: number;
-    productImage: string;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
     onSale: boolean;
+    rating: {
+        rate: number;
+        count: number;
+    }
 }

@@ -1,1 +1,18 @@
-<p>products-list works!</p>
+<div class="card border-grey mb-4">
+    <div class="card-header bg-dark text-white fw-bold fs-3">
+      Top Jewelry
+    </div>
+      <app-top-category></app-top-category>
+  </div>
+  
+  <div class="card border-grey mb-4">
+    <div class="card-header bg-dark text-white fw-bold fs-3">
+      All Products
+    </div>
+    @defer (on timer(2s)) {
+        <app-product></app-product>
+    }@placeholder {
+        <app-loading></app-loading>
+    }
+    </div>
+  
